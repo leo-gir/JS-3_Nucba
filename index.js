@@ -51,7 +51,7 @@ const input = document.getElementById("input");
 const container = document.getElementById("container");
 const small = document.getElementById("small");
 
-const pizza = JSON.parse(localStorage.getItem("pizza")) || [];
+const pizza = JSON.parse(localStorage.getItem("pizza")) || null;
 
 const saveLocalStorage = (pizza) => {
   localStorage.setItem('pizza', JSON.stringify(pizza));
